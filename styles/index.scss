@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "config";
+@import "general";
+@import "buttons";
+@import "layouts";
+
+// ////////////////////////////////////////////////
+// Navigation
+// ////////////////////////////////////////////////
+
+.logo-img {
+  background-color: $background-light;
+  padding: 4px 14px;
+  border-radius: 4px;
+}
+
+.menu-icon {
+  color: $secondary-font;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 50px);
+  width: 100%;
+  max-width: 180px;
+  background-color: $background-light;
+  box-shadow: $shadow;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    color: $primary-font;
+    height: 10%;
+    transition: all 0.4s ease-in-out;
+  }
+
+  li:hover {
+    background-color: lighten($primary-color, 20%);
+    color: $secondary-font;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+// ////////////////////////////////////////////////
+// Hero
+// ////////////////////////////////////////////////
+
+.slider {
+  width: 95%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  %icon {
+    color: $secondary-font;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .icon-left {
+    @extend %icon;
+    left: 2%;
+  }
+
+  .icon-right {
+    @extend %icon;
+    right: 2%;
+  }
+}
+
+// ////////////////////////////////////////////////
+// Sections
+// ////////////////////////////////////////////////

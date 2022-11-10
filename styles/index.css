@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  font-size: 100%;
+} /*16px*/
+body {
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.488rem;
+}
+
+h2 {
+  font-size: 2.074rem;
+}
+
+h3 {
+  font-size: 1.728rem;
+}
+
+h4 {
+  font-size: 1.44rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+small,
+.text_small {
+  font-size: 0.833rem;
+}
+
+nav {
+  background-color: #0543ce;
+  box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.2);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+}
+nav div {
+  width: fit-content;
+}
+nav li {
+  font-size: 0.833rem;
+}
+
+.btn-secondary, .btn-primary, .btn-nav {
+  padding: 4px 14px;
+  border-radius: 4px;
+  margin: 0px 6px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid #0543ce;
+}
+.btn-secondary:hover, .btn-primary:hover, .btn-nav:hover {
+  border: 1px solid #fff;
+  background-color: #3f79fa;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-nav {
+  color: #0543ce;
+  background-color: #fff;
+}
+
+.content {
+  padding-top: 50px;
+}
+
+.logo-img {
+  background-color: #fff;
+  padding: 4px 14px;
+  border-radius: 4px;
+}
+
+.menu-icon {
+  color: #fff;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 50px);
+  width: 100%;
+  max-width: 180px;
+  background-color: #fff;
+  box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.sidebar li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  color: #0543ce;
+  height: 10%;
+  transition: all 0.4s ease-in-out;
+}
+.sidebar li:hover {
+  background-color: #3f79fa;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.slider {
+  width: 95%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider .icon-right, .slider .icon-left {
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+}
+.slider .icon-left {
+  left: 2%;
+}
+.slider .icon-right {
+  right: 2%;
+}
+
+/*# sourceMappingURL=index.css.map */
