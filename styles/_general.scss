@@ -16,3 +16,27 @@ nav {
     font-size: 0.833rem;
   }
 }
+
+footer {
+  background-color: $primary-color;
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  color: $secondary-font;
+
+  .logo {
+    background-color: $background-light;
+    width: fit-content;
+    padding: 4px 14px;
+    border-radius: 4px;
+  }
+
+  .icons {
+    color: $secondary-font;
+    width: 100%;
+    max-width: 140px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+}

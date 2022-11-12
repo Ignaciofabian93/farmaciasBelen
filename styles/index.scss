@@ -79,19 +79,64 @@
     color: $secondary-font;
     position: absolute;
     z-index: 1;
+    cursor: pointer;
   }
 
   .icon-left {
     @extend %icon;
-    left: 2%;
+    left: 3%;
   }
 
   .icon-right {
     @extend %icon;
-    right: 2%;
+    right: 3%;
   }
 }
 
 // ////////////////////////////////////////////////
 // Sections
+// ////////////////////////////////////////////////
+
+.carousel {
+  display: flex;
+  align-items: center;
+  // justify-content: space-around;
+  overflow-x: hidden;
+  width: 95%;
+  max-width: 95vw;
+  height: fit-content;
+}
+
+.card {
+  width: 180px;
+  height: 280px;
+  border-radius: 6px;
+  margin: 6px 10px;
+  padding: 4px;
+  box-shadow: $shadow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: lighten($primary-color, 25%);
+
+  h4 {
+    margin: 0;
+    padding: 4px;
+    color: $secondary-font;
+  }
+
+  .img {
+    width: 90%;
+  }
+
+  p {
+    margin: 0;
+    padding: 4px;
+    color: $secondary-font;
+  }
+}
+
+// ////////////////////////////////////////////////
+// Footer
 // ////////////////////////////////////////////////

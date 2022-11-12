@@ -46,7 +46,7 @@ export default function Navbar() {
             className="sidebar transition duration-500 ease-in-out"
             style={
               ({ display: open ? "flex" : "none" },
-              { transform: open ? "translateX(-180px)" : "none" })
+              { transform: open ? "translateX(-186px)" : "none" })
             }
           >
             <ul className="sidebar-list">
