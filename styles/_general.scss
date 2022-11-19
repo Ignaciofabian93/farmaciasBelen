@@ -40,3 +40,63 @@ footer {
     margin-top: 20px;
   }
 }
+
+.search {
+  height: 50px;
+  width: 100%;
+  background-color: lighten($background-dark, 95%);
+  margin-bottom: 30px;
+}
+
+.p {
+  width: 100%;
+  text-align: center;
+  padding: 5px 10px;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  // border: 1px solid black;
+  box-shadow: $shadow;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 30px;
+
+  .text,
+  .number {
+    width: 100%;
+    border: 0.5px solid $placeholder;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+
+    &::placeholder {
+      color: $placeholder;
+    }
+
+    &:focus {
+      outline: none !important;
+    }
+  }
+  .area {
+    height: 120px;
+    width: 100%;
+    border: 0.5px solid $placeholder;
+    padding: 5px 10px;
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 10px;
+
+    &::placeholder {
+      color: $placeholder;
+    }
+    &:focus {
+      outline: none !important;
+    }
+  }
+}

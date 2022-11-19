@@ -51,22 +51,34 @@ export default function Navbar() {
           >
             <ul className="sidebar-list">
               <li className="sidebar-item">
-                <Link href={"#"}>Inicio</Link>
+                <Link href={"/"} onClick={() => setOpen(true)}>
+                  Inicio
+                </Link>
               </li>
               <li className="sidebar-item">
-                <Link href={"#"}>Catálogo</Link>
+                <Link href={"/catalogue"} onClick={() => setOpen(true)}>
+                  Catálogo
+                </Link>
               </li>
               <li className="sidebar-item">
-                <Link href={"#"}>Sucursales</Link>
+                <Link href={"/branches"} onClick={() => setOpen(true)}>
+                  Sucursales
+                </Link>
               </li>
               <li className="sidebar-item">
-                <Link href={"#"}>Contacto</Link>
+                <Link href={"/contact"} onClick={() => setOpen(true)}>
+                  Contacto
+                </Link>
               </li>
               <li className="sidebar-item">
-                <Link href={"#"}>Correo interno</Link>
+                <Link href={"#"} onClick={() => setOpen(true)}>
+                  Correo interno
+                </Link>
               </li>
               <li className="sidebar-item">
-                <Link href={"#"}>Intranet</Link>
+                <Link href={"#"} onClick={() => setOpen(true)}>
+                  Intranet
+                </Link>
               </li>
             </ul>
           </div>

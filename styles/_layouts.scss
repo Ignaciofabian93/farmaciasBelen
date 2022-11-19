@@ -19,4 +19,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
+}
+
+.section-3 {
+  @extend %section;
+  background-color: $background-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
 }

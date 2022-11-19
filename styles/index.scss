@@ -76,7 +76,7 @@
   justify-content: center;
 
   %icon {
-    color: $secondary-font;
+    color: $primary-color;
     position: absolute;
     z-index: 1;
     cursor: pointer;
@@ -119,11 +119,19 @@
   align-items: center;
   justify-content: space-around;
   background-color: lighten($primary-color, 25%);
+  // pointer-events: none;
+  transition: all 0.2s ease-in-out;
 
-  h4 {
+  &:hover {
+    box-shadow: $shadow-hover;
+    transition: all 0.2s ease-in-out;
+  }
+
+  h5 {
     margin: 0;
     padding: 4px;
     color: $secondary-font;
+    height: 60px;
   }
 
   .img {

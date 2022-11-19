@@ -46,7 +46,7 @@ export default function Slider() {
   return (
     <>
       <div className="slider mx-auto">
-        <div className="w-full h-full flex items-center justify-center">
+        <div className="w-fit h-fit flex items-center justify-center">
           <div className="icon-left">
             <AiOutlineLeft
               size={24}
@@ -62,7 +62,7 @@ export default function Slider() {
               key={sliderImages[index]}
             >
               <Image
-                className="rounded"
+                className="rounded mx-auto"
                 src={sliderImages[index]}
                 width={1100}
                 height={500}

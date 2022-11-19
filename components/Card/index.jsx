@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-export default function Card({ src }) {
+export default function Card({ titulo, src, precio, alt }) {
   return (
     <>
       <div className="card">
         <div className="text-center">
-          <h4>Producto</h4>
+          <h5>{titulo}</h5>
         </div>
         <div className="img">
           <Image
@@ -13,11 +13,12 @@ export default function Card({ src }) {
             className="rounded-md"
             width={180}
             height={200}
-            alt="carousel-image"
+            alt="Imagen de producto"
+            priority
           />
         </div>
         <div className="text-center">
-          <p>$9.990</p>
+          <p>${precio}</p>
         </div>
       </div>
     </>
