@@ -1,11 +1,9 @@
-import { direcciones } from "../direcciones";
-
-export default function Map() {
+export default function Map({ src }) {
   return (
-    <div className="map_container">
+    <div className="rounded-4 mb-4">
       <iframe
-        src={direcciones.mapa}
-        className=""
+        src={src}
+        className="map rounded mx-auto"
         style={{ border: 0 }}
         allowFullScreen=""
         loading="lazy"

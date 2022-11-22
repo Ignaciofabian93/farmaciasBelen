@@ -12,7 +12,7 @@ export const catalogo = [
     alt: "",
   },
   {
-    titulo: "Excellance 6660",
+    titulo: "Excellence 6660",
     src: "/images/gallery/3.jpg",
     precio: 6490,
     alt: "",
