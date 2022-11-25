@@ -42,10 +42,22 @@ footer {
 }
 
 .search {
-  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
   width: 100%;
   background-color: lighten($background-dark, 95%);
   margin-bottom: 30px;
+
+  .filter {
+    height: fit-content;
+    width: 90%;
+
+    p {
+      margin: 0;
+    }
+  }
 }
 
 .p {

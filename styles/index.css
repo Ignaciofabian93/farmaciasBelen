@@ -184,10 +184,20 @@ footer .icons {
 }
 
 .search {
-  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
   width: 100%;
   background-color: #f2f2f2;
   margin-bottom: 30px;
+}
+.search .filter {
+  height: fit-content;
+  width: 90%;
+}
+.search .filter p {
+  margin: 0;
 }
 
 .p {
@@ -277,10 +287,18 @@ form .area:focus {
   padding-top: 50px;
 }
 
-.section-3, .section-2, .section-1 {
+.section-3, .section-2, .section-1, .section-hero {
   width: 100%;
   height: fit-content;
   margin-bottom: 30px;
+}
+
+.section-hero {
+  margin-top: 10px;
+}
+
+.section-1 {
+  margin-top: 40px;
 }
 
 .section-2 {
@@ -414,7 +432,8 @@ form .area:focus {
 }
 
 .accordeon {
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   height: 50px;
   padding: 10px;
   box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
@@ -422,25 +441,43 @@ form .area:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
   transition: all 0.4s ease-in-out;
 }
 .accordeon p {
   margin: 0;
 }
 
-.box-hidden {
-  width: 250px;
-  padding: 10px;
-  border: 0.5px solid #ddd;
-  border-radius: 4px;
-  height: fit-content;
+.box-content {
   text-align: center;
   display: flex;
   flex-direction: column;
-  transition: all 0.4s ease-in-out;
+  border: 0.5px solid #ddd;
+  height: 0;
+  max-height: 0;
+  width: 100%;
+  max-width: 250px;
+  padding: 0px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
 }
-.box-hidden p {
+.box-content small {
+  width: 100%;
+}
+
+.box-content.show {
+  height: fit-content;
+  max-height: 9999px;
+  width: 100%;
+  max-width: 250px;
+  padding: 10px 0px;
+  border: 0.5px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+}
+.box-content.show p {
   margin-bottom: 5px;
 }
 
@@ -449,6 +486,22 @@ form .area:focus {
   border-radius: 4px;
   width: 180px;
   height: 180px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.area-box {
+  border: 0.5px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.area-box p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

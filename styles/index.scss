@@ -150,7 +150,8 @@
 // ////////////////////////////////////////////////
 
 .accordeon {
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   height: 50px;
   padding: 10px;
   box-shadow: $shadow;
@@ -158,8 +159,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // margin-bottom: 10px;
-  overflow: hidden;
   transition: all 0.4s ease-in-out;
 
   p {
@@ -167,16 +166,36 @@
   }
 }
 
-.box-hidden {
-  width: 250px;
-  padding: 10px;
-  border: 0.5px solid #ddd;
-  border-radius: 4px;
-  height: fit-content;
+.box-content {
   text-align: center;
   display: flex;
   flex-direction: column;
-  transition: all 0.4s ease-in-out;
+  border: 0.5px solid #ddd;
+  height: 0;
+  max-height: 0;
+  width: 100%;
+  max-width: 250px;
+  padding: 0px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+
+  small {
+    width: 100%;
+  }
+}
+
+.box-content.show {
+  height: fit-content;
+  max-height: 9999px;
+  width: 100%;
+  max-width: 250px;
+  padding: 10px 0px;
+  border: 0.5px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
 
   p {
     margin-bottom: 5px;
@@ -188,4 +207,21 @@
   border-radius: 4px;
   width: 180px;
   height: 180px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.area-box {
+  border: 0.5px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 10px;
+
+  p {
+    margin: 0;
+  }
 }

@@ -24,9 +24,10 @@ export default function Navbar() {
               <Link href={"/"}>
                 <Image
                   className="logo-img"
-                  src={"/images/logos/logobelen (1).gif"}
+                  src={"/images/logos/logo-nav.gif"}
                   width={120}
                   height={30}
+                  style={{ height: "auto" }}
                   alt="logo"
                 />
               </Link>
@@ -35,10 +36,12 @@ export default function Navbar() {
           <div className="mr-4 hidden sm:flex items-center">
             <ul className="flex">
               <li className="btn-nav">
-                <Link href={"#"}>Correo interno</Link>
-              </li>
-              <li className="btn-nav">
-                <Link href={"#"}>Intranet</Link>
+                <Link
+                  href={"http://www.farmaciasbelen.cl/webmail/?_task=login"}
+                  target="_blank"
+                >
+                  Correo interno
+                </Link>
               </li>
             </ul>
           </div>
@@ -56,28 +59,27 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="sidebar-item">
-                <Link href={"/catalogue"} onClick={() => setOpen(true)}>
+                <Link href={"/catalogo"} onClick={() => setOpen(true)}>
                   Catálogo
                 </Link>
               </li>
               <li className="sidebar-item">
-                <Link href={"/branches"} onClick={() => setOpen(true)}>
+                <Link href={"/sucursales"} onClick={() => setOpen(true)}>
                   Sucursales
                 </Link>
               </li>
               <li className="sidebar-item">
-                <Link href={"/contact"} onClick={() => setOpen(true)}>
+                <Link href={"/contacto"} onClick={() => setOpen(true)}>
                   Contacto
                 </Link>
               </li>
               <li className="sidebar-item">
-                <Link href={"#"} onClick={() => setOpen(true)}>
+                <Link
+                  href={"http://www.farmaciasbelen.cl/webmail/?_task=login"}
+                  target="_blank"
+                  onClick={() => setOpen(true)}
+                >
                   Correo interno
-                </Link>
-              </li>
-              <li className="sidebar-item">
-                <Link href={"#"} onClick={() => setOpen(true)}>
-                  Intranet
                 </Link>
               </li>
             </ul>

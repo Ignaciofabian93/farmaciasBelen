@@ -98,19 +98,25 @@ export default function Form() {
             id="rut"
             name="rut"
             type="number"
-            placeholder="RUT"
+            placeholder="RUT (Sin puntos ni guión)"
             onChange={(e) => setRut(e.target.value)}
             required
           />
-          <input
-            className="number"
-            id="telephone"
-            name="telephone"
-            type="number"
-            placeholder="Teléfono"
-            onChange={(e) => setTelephone(e.target.value)}
-            required
-          />
+          <div className="flex items-center">
+            <div className="area-box flex items-center justify-center">
+              <p>+56</p>
+            </div>
+
+            <input
+              className="number"
+              id="telephone"
+              name="telephone"
+              type="number"
+              placeholder="Teléfono"
+              onChange={(e) => setTelephone(e.target.value)}
+              required
+            />
+          </div>
           <textarea
             className="area"
             placeholder="Mensaje"

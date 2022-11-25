@@ -8,6 +8,7 @@ export default function Map({ src }) {
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
+        sandbox
       ></iframe>
     </div>
   );

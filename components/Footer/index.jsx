@@ -12,9 +12,10 @@ export default function Footer() {
         <div className="flex flex-col items-center">
           <div className="logo flex items-center">
             <Image
-              src={"/images/logos/logobelen (1).gif"}
+              src={"/images/logos/logo-footer.gif"}
               width={150}
-              height={75}
+              height={40}
+              style={{ height: "auto" }}
               alt="Logo"
               priority
             />

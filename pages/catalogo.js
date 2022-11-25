@@ -12,13 +12,13 @@ export default function Catalogue() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main className="content">
-          <section className="section-1 mt-6">
+          <section className="section-1">
             <div className="text-center">
               <h1>Catálogo</h1>
             </div>
-            <div>
-              <div className="search"></div>
-            </div>
+            <p className="text-center w-full">
+              Encuentra tus productos al mejor precio
+            </p>
             <div className="grid grid-cols-1 items-center justify-center mx-auto w-fit sm:grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
               {galeria.map((image, index) => (
                 <div key={index} className="mx-auto">
