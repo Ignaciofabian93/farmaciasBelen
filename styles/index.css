@@ -250,6 +250,18 @@ form .area:focus {
   outline: none !important;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .btn-secondary, .btn-primary, .btn-nav {
   padding: 4px 14px;
   border-radius: 4px;

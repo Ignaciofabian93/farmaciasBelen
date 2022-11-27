@@ -102,7 +102,7 @@ export default function Form() {
             onChange={(e) => setRut(e.target.value)}
             required
           />
-          <div className="flex items-center">
+          <div className="flex items-center w-full">
             <div className="area-box flex items-center justify-center">
               <p>+56</p>
             </div>

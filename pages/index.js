@@ -93,7 +93,7 @@ export default function Home() {
               </motion.div>
             </div>
             <div className="flex w-full items-center justify-center mt-6">
-              <Button href={"/catalogue"} text="Ver catálogo" />
+              <Button href={"/catalogo"} text="Ver catálogo" />
             </div>
           </div>
         </section>
